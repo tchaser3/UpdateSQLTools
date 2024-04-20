@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DuplicateToolsDataSet" targetNamespace="http://tempuri.org/DuplicateToolsDataSet.xsd" xmlns:mstns="http://tempuri.org/DuplicateToolsDataSet.xsd" xmlns="http://tempuri.org/DuplicateToolsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DuplicateToolsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DuplicateToolsDataSet" msprop:Generator_UserDSName="DuplicateToolsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="duplicatetools" msprop:Generator_TableClassName="duplicatetoolsDataTable" msprop:Generator_TableVarName="tableduplicatetools" msprop:Generator_RowChangedName="duplicatetoolsRowChanged" msprop:Generator_TablePropName="duplicatetools" msprop:Generator_RowDeletingName="duplicatetoolsRowDeleting" msprop:Generator_RowChangingName="duplicatetoolsRowChanging" msprop:Generator_RowEvHandlerName="duplicatetoolsRowChangeEventHandler" msprop:Generator_RowDeletedName="duplicatetoolsRowDeleted" msprop:Generator_RowClassName="duplicatetoolsRow" msprop:Generator_UserTableName="duplicatetools" msprop:Generator_RowEvArgName="duplicatetoolsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
+              <xs:element name="ToolKey" msprop:Generator_ColumnVarNameInTable="columnToolKey" msprop:Generator_ColumnPropNameInRow="ToolKey" msprop:Generator_ColumnPropNameInTable="ToolKeyColumn" msprop:Generator_UserColumnName="ToolKey" type="xs:int" />
+              <xs:element name="ToolID" msprop:Generator_ColumnVarNameInTable="columnToolID" msprop:Generator_ColumnPropNameInRow="ToolID" msprop:Generator_ColumnPropNameInTable="ToolIDColumn" msprop:Generator_UserColumnName="ToolID" type="xs:string" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" />
+              <xs:element name="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" msprop:Generator_UserColumnName="Active" type="xs:boolean" />
+              <xs:element name="Available" msprop:Generator_ColumnVarNameInTable="columnAvailable" msprop:Generator_ColumnPropNameInRow="Available" msprop:Generator_ColumnPropNameInTable="AvailableColumn" msprop:Generator_UserColumnName="Available" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:duplicatetools" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
